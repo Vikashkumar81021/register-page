@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+label {
+  color: darkgreen;
+  font-weight: 300;
+}
+.container {
+  height: 550px;
+  width: 450px;
+}
+.container .form-box h2 {
+  text-align: center;
+  margin-right: 100px;
+}
+.form-box .input-box {
+  margin: 35px 0;
+  width: 330px;
+  border-bottom: 2px solid rgb(144, 131, 131);
+  position: relative;
+}
+.form-box .input-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  padding: 0 35px 0 5px;
+}
+.form-box .input-box label {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  position: absolute;
+  left: 5px;
+  top: 10%;
+}
+.input-box input:focus ~ label,
+.input-box input:focus ~ label {
+  top: -5px;
+}
+
+.btn {
+  height: 45px;
+  width: 75%;
+  position: relative;
+  top: 70px;
+  color: #ffff;
+  background-color: darkgreen;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1px;
+  position: relative;
+  bottom: 100px;
+  margin-right: 100px;
+}
+
+.facebook-icon {
+  width: 150px;
+  background-color: rgb(238, 243, 247);
+  height: 30px;
+}
+.google-icon {
+  width: 150px;
+  background-color: rgb(238, 243, 247);
+  height: 30px;
+}
+.have-account {
+  position: relative;
+  margin-right: 180px;
+  bottom: 80px;
+}
+
+.login {
+  position: relative;
+  margin-left: 180px;
+  bottom: 100px;
+}
