@@ -3,36 +3,43 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   height: 100vh;
   align-items: center;
   justify-content: center;
 }
+
 p {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 100px;
 }
+
 label {
   color: darkgreen;
   font-weight: 300;
 }
+
 .container {
   height: 550px;
   width: 450px;
 }
+
 .container .form-box h2 {
   text-align: center;
   margin-right: 100px;
 }
+
 .form-box .input-box {
   margin: 35px 0;
   width: 330px;
   border-bottom: 2px solid rgb(144, 131, 131);
   position: relative;
 }
+
 .form-box .input-box input {
   border: none;
   outline: none;
@@ -40,6 +47,7 @@ label {
   height: 40px;
   padding: 0 35px 0 5px;
 }
+
 .form-box .input-box label {
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -47,6 +55,7 @@ label {
   left: 5px;
   top: 10%;
 }
+
 .input-box input:focus ~ label,
 .input-box input:focus ~ label {
   top: -5px;
@@ -78,11 +87,13 @@ label {
   background-color: rgb(238, 243, 247);
   height: 30px;
 }
+
 .google-icon {
   width: 150px;
   background-color: rgb(238, 243, 247);
   height: 30px;
 }
+
 .have-account {
   position: relative;
   margin-right: 180px;
@@ -90,7 +101,40 @@ label {
 }
 
 .login {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%; 
+  }
+
+  .form-box .input-box {
+    width: 100%; 
+  }
+
+  .btn {
+    width: 100%; 
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .have-account {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+.login{
+  margin-right: 0;
   position: relative;
-  margin-left: 180px;
-  bottom: 100px;
+  bottom: 118px;
+  margin-left: 190px;
+  text-align: center; 
 }
